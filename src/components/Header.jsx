@@ -1,4 +1,4 @@
-import logoIcon from "../../public/imageslogo.svg";
+import logoIcon from "../../public/images/logo.svg";
 
 function Header() {
   return (
