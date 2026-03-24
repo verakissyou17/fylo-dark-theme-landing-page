@@ -7,7 +7,7 @@ header {
   padding: f.rem(14);
 
   @include m.breakpoint(large) {
-    padding: f.rem(24) f.rem(48);
+    padding: f.rem(48);
   }
 
   & .header-img-container {
