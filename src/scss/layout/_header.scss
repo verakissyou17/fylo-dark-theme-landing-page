@@ -1,0 +1,28 @@
+@use "../utils/variables" as v;
+@use "../utils/functions" as f;
+@use "../utils/mixings" as m;
+
+header {
+  justify-content: space-between;
+  padding: f.rem(14);
+
+  @include m.breakpoint(large) {
+    padding: f.rem(24) f.rem(48);
+  }
+
+  & .header-img-container {
+    width: 30%;
+  }
+
+  & .header-nav {
+    & ul {
+      gap: f.rem(10);
+      font-family: v.$font-family-heading;
+
+      li a:hover {
+        font-weight: v.$fw-700;
+        text-decoration: underline;
+      }
+    }
+  }
+}

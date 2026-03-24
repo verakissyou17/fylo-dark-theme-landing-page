@@ -1,0 +1,76 @@
+@use "../utils/variables" as v;
+@use "../utils/functions" as f;
+@use "../utils/mixings" as m;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: v.$white;
+  background-color: v.$navy-900;
+  font-family: v.$font-family-body;
+}
+
+h1,
+h2,
+h3 {
+  font-family: v.$font-family-heading;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cover {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: f.rem(430);
+  background: url(/public/images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  background-color: v.$navy-850;
+  z-index: -1;
+
+  @include m.breakpoint(large) {
+    height: f.rem(1260);
+    background: url("/images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    background-color: v.$navy-850;
+    z-index: -1;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

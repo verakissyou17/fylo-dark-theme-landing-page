@@ -1,0 +1,186 @@
+@use "../utils/variables" as v;
+@use "../utils/functions" as f;
+@use "../utils/mixings" as m;
+
+main {
+  line-height: 1.5;
+  max-width: f.rem(330);
+  margin: 0 auto;
+  gap: f.rem(150);
+
+  @include m.breakpoint(large) {
+    max-width: f.rem(1000);
+  }
+
+  .main-hero {
+    text-align: center;
+    margin-top: f.rem(30);
+
+    @include m.breakpoint(large) {
+      max-width: 80%;
+    }
+
+    .hero-image {
+      width: 100%;
+      margin-bottom: f.rem(40);
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 1.06rem + 1.878vw, 2.75rem);
+      margin-block: f.rem(40) auto f.rem(20);
+    }
+
+    p {
+      font-size: v.$font-size-body;
+      margin: f.rem(15);
+
+      @include m.breakpoint(large) {
+        max-width: 55%;
+        margin: f.rem(15) auto f.rem(20);
+      }
+    }
+
+    button {
+      width: 75%;
+      border-radius: f.rem(100);
+      padding: f.rem(12);
+      background: v.$cta-gradient;
+      color: inherit;
+      font-weight: v.$fw-700;
+      margin: f.rem(8) auto;
+      font-family: inherit;
+      border: none;
+      outline: none;
+
+      @include m.breakpoint(large) {
+        width: 25%;
+      }
+    }
+
+    button:hover {
+      cursor: pointer;
+      background: v.$teal-200;
+    }
+  }
+
+  .main-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: f.rem(35);
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+
+    @include m.breakpoint(large) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: f.rem(135);
+    }
+
+    h2 {
+      font-size: f.rem(16);
+      margin-block: f.rem(16);
+    }
+
+    p {
+      font-size: v.$font-size-body;
+    }
+  }
+
+  & .main-productive {
+    text-align: left;
+    align-items: flex-start;
+
+    h2 {
+      font-size: clamp(1rem, 0.296rem + 3.005vw, 3rem);
+      line-height: 1.2;
+      margin-block: f.rem(16);
+    }
+
+    p {
+      font-size: v.$font-size-body;
+      margin-bottom: f.rem(16);
+
+      @include m.breakpoint(large) {
+        max-width: 90%;
+      }
+    }
+
+    a {
+      max-width: 50%;
+      color: v.$teal-200;
+      gap: f.rem(8);
+      padding: f.rem(5) 0;
+      border-bottom: 2px solid v.$teal-200;
+      font-size: v.$font-size-body;
+      font-family: v.$font-family-heading;
+
+      @include m.breakpoint(large) {
+        max-width: 30%;
+      }
+    }
+
+    @include m.breakpoint(large) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: f.rem(82);
+    }
+  }
+
+  & .main-articles {
+    position: relative;
+    gap: f.rem(30);
+
+    @include m.breakpoint(large) {
+      flex-direction: row;
+    }
+
+    & .quotes {
+      position: absolute;
+      top: -3%;
+      left: 0;
+      z-index: -1;
+      height: f.rem(30);
+
+      @include m.breakpoint(large) {
+        height: f.rem(40);
+        top: -15%;
+      }
+    }
+
+    & article {
+      z-index: 1;
+      background-color: v.$navy-800;
+      padding: f.rem(30) f.rem(10);
+      border-radius: f.rem(5);
+      text-align: left;
+
+      p {
+        font-size: v.$font-size-body;
+      }
+
+      & .testimonial {
+        margin-bottom: f.rem(30);
+      }
+
+      & .user {
+        gap: f.rem(16);
+
+        & img {
+          max-width: f.rem(40);
+          border-radius: f.rem(100);
+        }
+
+        & .user-details {
+          h3 {
+            font-size: f.rem(16);
+          }
+        }
+      }
+    }
+  }
+}
