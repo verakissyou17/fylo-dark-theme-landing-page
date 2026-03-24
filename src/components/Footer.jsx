@@ -56,10 +56,7 @@ function Footer() {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="button" className="sr-only">
-              Button
-            </label>
-            <input id="button" type="submit" value="Get Started For Free" />
+            <button id="button" type="submit">Get Started For Free</button>
           </div>
         </form>
         <p

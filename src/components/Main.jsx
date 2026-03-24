@@ -25,7 +25,7 @@ function Main() {
             family, and co-workers.
           </p>
 
-          <button>Get Started</button>
+          <button type="button">Get Started</button>
         </section>
       </div>
 

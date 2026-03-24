@@ -76,13 +76,19 @@ footer {
           opacity: 0.5;
         }
 
-        input[type="submit"] {
+        button[type="submit"] {
           background: v.$cta-gradient;
           color: v.$white;
           font-weight: v.$fw-700;
+          border: none;
+          outline: none;
+          padding: f.rem(14) f.rem(28);
+          border-radius: f.rem(100);
+          width: 100%;
+          cursor: pointer;
         }
 
-        input[type="button"]:hover {
+        button[type="submit"]:hover {
           background: v.$teal-200;
         }
       }
