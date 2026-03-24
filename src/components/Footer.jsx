@@ -71,7 +71,7 @@ function Footer() {
         </p>
       </div>
       <div className="footer-container">
-        <img src={logo} alt="logo" className="logo" />
+        <img src={logo} alt="logo icon" className="logo" />
         <div className="footer-details col">
           <div className="location row">
             <img src={locationIcon} alt="location icon" />
@@ -122,6 +122,7 @@ function Footer() {
               href="http://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit our Facebook page"
             >
               <FontAwesomeIcon icon={faFacebook} />
             </a>
@@ -129,6 +130,7 @@ function Footer() {
               href="http://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit our Twitter page"
             >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
@@ -136,6 +138,7 @@ function Footer() {
               href="http://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
+               aria-label="Visit our Instagram page"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>

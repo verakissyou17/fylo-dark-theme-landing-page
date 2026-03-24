@@ -32,7 +32,7 @@ function Main() {
       <div className="main-grid">
         <div className="col">
           <div>
-            <img src={iconAccessAnywhere} alt="icon-access" />
+            <img src={iconAccessAnywhere} alt="icon access" />
           </div>
           <section>
             <h2>Access your files, anywhere</h2>
@@ -44,7 +44,7 @@ function Main() {
         </div>
         <div className="col">
           <div>
-            <img src={iconSecurity} alt="icon-security" />
+            <img src={iconSecurity} alt="icon security" />
           </div>
           <section>
             <h2>Security you can trust</h2>
@@ -57,7 +57,7 @@ function Main() {
         </div>
         <div className="col">
           <div>
-            <img src={iconCollaboration} alt="icon-collaboration" />
+            <img src={iconCollaboration} alt="icon collaboration" />
           </div>
           <section>
             <h2>Real-time collaboration</h2>
@@ -69,7 +69,7 @@ function Main() {
         </div>
         <div className="col">
           <div>
-            <img src={iconAnyFile} alt="icon-storage" />
+            <img src={iconAnyFile} alt="icon storage" />
           </div>
           <section>
             <h2>Store any type of file</h2>
@@ -84,7 +84,7 @@ function Main() {
 
       <div className="main-productive col">
         <div>
-          <img src={illustrationStayProductive} alt="image people as a team" />
+          <img src={illustrationStayProductive} alt="people as a team" />
         </div>
         <section>
           <h2>Stay productive, wherever you are</h2>
@@ -97,7 +97,7 @@ function Main() {
             for live collaboration. No email attachments required.
           </p>
           <a className="row" href="#">
-            See how Fylo works <img src={iconArrow} />
+            See how Fylo works <img src={iconArrow} alt="arrow icon" />
           </a>
         </section>
       </div>
