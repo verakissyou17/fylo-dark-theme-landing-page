@@ -90,7 +90,7 @@ function Footer() {
               <p>example@fylo.com</p>
             </div>
           </div>
-          <nav className="nav col">
+          <nav className="nav col" aria-label="Footer navigation">
             <ul>
               <li>
                 <a href="#">About Us</a>
