@@ -5,8 +5,8 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from '../../public/images/logo.svg';
-import locationIcon from '../../public/images/icon-location.svg';
+import logo from "../../public/images/logo.svg";
+import locationIcon from "../../public/images/icon-location.svg";
 import phoneIcon from "../../public/images/icon-phone.svg";
 import emaiIcon from "../../public/images/icon-email.svg";
 
@@ -56,7 +56,9 @@ function Footer() {
             />
           </div>
           <div className="form-group">
-            <button id="button" type="submit">Get Started For Free</button>
+            <button id="button" type="submit">
+              Get Started For Free
+            </button>
           </div>
         </form>
         <p
@@ -135,7 +137,7 @@ function Footer() {
               href="http://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-               aria-label="Visit our Instagram page"
+              aria-label="Visit our Instagram page"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
@@ -145,7 +147,11 @@ function Footer() {
 
       <p className="attribution">
         Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Frontend Mentor
         </a>
         . Coded with love by <a href="#">Vera 💞</a>.
