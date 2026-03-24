@@ -5,6 +5,10 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import logo from '../../public/images/logo.svg';
+import locationIcon from '../../public/images/icon-location.svg';
+import phoneIcon from "../../public/images/icon-phone.svg";
+import emaiIcon from "../../public/images/icon-email.svg";
 
 function Footer() {
   const [inputValue, setInputvalue] = useState("");
@@ -67,10 +71,10 @@ function Footer() {
         </p>
       </div>
       <div className="footer-container">
-        <img src="/images/logo.svg" alt="logo" className="logo" />
+        <img src={logo} alt="logo" className="logo" />
         <div className="footer-details col">
           <div className="location row">
-            <img src="/images/icon-location.svg" alt="location icon" />
+            <img src={locationIcon} alt="location icon" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -78,11 +82,11 @@ function Footer() {
           </div>
           <div className="contact">
             <div className="row">
-              <img src="/images/icon-phone.svg" alt="phone icon" />
+              <img src={phoneIcon} alt="phone icon" />
               <p>+1-543-123-4567</p>
             </div>
             <div className="row">
-              <img src="/images/icon-email.svg" alt="email icon" />
+              <img src={emaiIcon} alt="email icon" />
               <p>example@fylo.com</p>
             </div>
           </div>

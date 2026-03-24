@@ -1,10 +1,10 @@
-
+import logoIcon from "../../public/imageslogo.svg";
 
 function Header() {
   return (
     <header className="row">
       <div className="header-img-container">
-        <img src="/images/logo.svg" alt="page-logo" />
+        <img src={logoIcon} alt="page-logo" />
       </div>
       <nav className="header-nav">
         <ul className="row">

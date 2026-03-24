@@ -1,11 +1,21 @@
-import React from "react";
+import introIllustration from "../../public/images/illustration-intro.png";
+import iconAccessAnywhere from "../../public/images/icon-access-anywhere.svg";
+import iconSecurity from "../../public/images/icon-security.svg";
+import iconCollaboration from "../../public/images/icon-collaboration.svg";
+import iconAnyFile from "../../public/images/icon-any-file.svg";
+import illustrationStayProductive from "../../public/images/illustration-stay-productive.png";
+import iconArrow from "../../public/images/icon-arrow.svg";
+import bgQuotes from "../../public/images/bg-quotes.png";
+import profile1 from "../../public/images/profile-1.jpg";
+import profile2 from "../../public/images/profile-2.jpg";
+import profile3 from "../../public/images/profile-3.jpg";
 
 function Main() {
   return (
     <main className="col">
       <div className="main-hero">
         <div className="hero-image">
-          <img src="/images/illustration-intro.png" alt="hero image" />
+          <img src={introIllustration} alt="hero image" />
         </div>
         <section>
           <h1>All your files in one secure location, accessible anywhere.</h1>
@@ -22,7 +32,7 @@ function Main() {
       <div className="main-grid">
         <div className="col">
           <div>
-            <img src="/images/icon-access-anywhere.svg" alt="icon-access" />
+            <img src={iconAccessAnywhere} alt="icon-access" />
           </div>
           <section>
             <h2>Access your files, anywhere</h2>
@@ -34,7 +44,7 @@ function Main() {
         </div>
         <div className="col">
           <div>
-            <img src="/images/icon-security.svg" alt="icon-security" />
+            <img src={iconSecurity} alt="icon-security" />
           </div>
           <section>
             <h2>Security you can trust</h2>
@@ -47,10 +57,7 @@ function Main() {
         </div>
         <div className="col">
           <div>
-            <img
-              src="/images/icon-collaboration.svg"
-              alt="icon-collaboration"
-            />
+            <img src={iconCollaboration} alt="icon-collaboration" />
           </div>
           <section>
             <h2>Real-time collaboration</h2>
@@ -62,7 +69,7 @@ function Main() {
         </div>
         <div className="col">
           <div>
-            <img src="/images/icon-any-file.svg" alt="icon-storage" />
+            <img src={iconAnyFile} alt="icon-storage" />
           </div>
           <section>
             <h2>Store any type of file</h2>
@@ -77,7 +84,7 @@ function Main() {
 
       <div className="main-productive col">
         <div>
-          <img src="/images/illustration-stay-productive.png" alt="image people as a team" />
+          <img src={illustrationStayProductive} alt="image people as a team" />
         </div>
         <section>
           <h2>Stay productive, wherever you are</h2>
@@ -90,13 +97,13 @@ function Main() {
             for live collaboration. No email attachments required.
           </p>
           <a className="row" href="#">
-            See how Fylo works <img src="/images/icon-arrow.svg" />
+            See how Fylo works <img src={iconArrow} />
           </a>
         </section>
       </div>
 
       <div className="main-articles col">
-        <img className="quotes" src="/images/bg-quotes.png" alt="quotes" />
+        <img className="quotes" src={bgQuotes} alt="quotes" />
         <article>
           <p className="testimonial">
             Fylo has improved our team productivity by an order of magnitude.
@@ -104,7 +111,7 @@ function Main() {
             collaboration machine.
           </p>
           <div className="user row">
-            <img src="/images/profile-1.jpg" alt="profile-image" />
+            <img src={profile1} alt="profile-image" />
             <div className="user-details">
               <h3>Satish Patel</h3>
               <p>Founder & CEO, Huddle</p>
@@ -118,7 +125,7 @@ function Main() {
             collaboration machine.
           </p>
           <div className="user row">
-            <img src="/images/profile-2.jpg" alt="profile-image" />
+            <img src={profile2} alt="profile-image" />
             <div className="user-details">
               <h3>Bruce McKenzie</h3>
               <p>Founder & CEO, Huddle</p>
@@ -132,7 +139,7 @@ function Main() {
             collaboration machine.
           </p>
           <div className="user row">
-            <img src="/images/profile-3.jpg" alt="profile-image" />
+            <img src={profile3} alt="profile-image" />
             <div className="user-details">
               <h3>Iva Boyd</h3>
               <p>Founder & CEO, Huddle</p>
